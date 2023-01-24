@@ -1,0 +1,24 @@
+ul {
+    float: right;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 250px;
+    font-size: 100px;
+
+}
+
+input {
+    display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 500px;
+}
+button {
+    display: flex;
+    margin: 0 auto;
+  justify-content: center;
+
+}
