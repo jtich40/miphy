@@ -3,6 +3,11 @@ ul {
     margin-top: 50px;
 }
 
+.pure-menu-link {
+  color: blueviolet;
+  justify-content: space-between;
+}
+
 h1 {
   color: blue;
     text-align: center;
