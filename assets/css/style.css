@@ -5,9 +5,9 @@ ul {
 
 h1 {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 0px;
+    margin-bottom: auto;
     font-size: 100px;
-
 }
 
 input {
@@ -16,9 +16,19 @@ input {
   justify-content: center;
   width: 500px;
 }
+
 button {
     display: flex;
     margin: 0 auto;
   justify-content: center;
+}
 
+.cat {
+display: flex;
+justify-content: center;
+height: 350px;
+}
+
+body {
+  margin-bottom: 50px;
 }
