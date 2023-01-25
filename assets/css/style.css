@@ -4,6 +4,7 @@ ul {
 }
 
 h1 {
+  color: blue;
     text-align: center;
     margin-top: 250px;
     font-size: 100px;
@@ -21,4 +22,8 @@ button {
     margin: 0 auto;
   justify-content: center;
 
+}
+ 
+body {
+  background-color: black;
 }
