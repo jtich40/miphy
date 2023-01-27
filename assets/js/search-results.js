@@ -49,5 +49,5 @@ function findMovie(searchVal) {
 
 
 }
-
+// findMovie function is invoked on search results page load
 window.addEventListener('load', findMovie(storedSearch))
