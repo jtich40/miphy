@@ -1,6 +1,6 @@
 let searchBtn = document.getElementById('search-btn')
 let searchParams = document.getElementById('text-input')
-let movieResultsTable = document.getElementById('movie-results')
+let movieResultsContainer = document.getElementById('search-results')
 let apiKey = '1851b49e'
 let apiKey2 = 'Nq178l1PC1zOvSDhLsOWhDI0FwqXPI99'
 
