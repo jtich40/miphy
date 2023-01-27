@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 ul {
     float: right;
     margin-top: 50px;
@@ -8,7 +12,6 @@ h1 {
     text-align: center;
     margin-top: 250px;
     font-size: 100px;
-
 }
 
 input {
@@ -17,13 +20,44 @@ input {
   justify-content: center;
   width: 500px;
 }
+
 button {
     display: flex;
     margin: 0 auto;
   justify-content: center;
-
 }
  
-body {
+.pure-menu-link {
+  margin: 20px;
+  color: blueviolet;
+  justify-content: space-between
+
+}
+.pure-menu-link:hover {
+  font-size: 110%;
+  color: white;
   background-color: black;
+  box-shadow: 0 0 3px 3px rgb(15, 15, 15),
+              3px 3px 7px 7px rgb(133, 8, 250);
+}
+
+.pure-menu-heading:hover {
+  font-size: 110%;
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 3px 3px rgb(15, 15, 15),
+              3px 3px 7px 7px rgb(133, 8, 250);
+}
+
+input:hover {
+  box-shadow: 0 0 5px 5px rgb(255, 254, 254);
+}
+
+button:hover {
+  font-size: 110%;
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 3px 3px rgb(15, 15, 15),
+              3px 3px 7px 7px rgb(133, 8, 250);
+
 }
