@@ -11,13 +11,14 @@ ul {
 h1 {
   color: blue;
   text-align: center;
-  margin-top: 250px;
+  position: relative;
   font-size: 100px;
+
 }
 
-h2 {
+/* h2 {
   color: white;
-}
+} */
 
 input {
     display: flex;
@@ -65,4 +66,15 @@ button:hover {
   box-shadow: 0 0 3px 3px rgb(15, 15, 15),
               3px 3px 7px 7px rgb(133, 8, 250);
 
+}
+
+#search-results {
+  display: flex;
+  margin: 10em;
+  flex-direction: column;
+}
+
+h2 {
+  color: white;
+  flex-grow: 1; 
 }
