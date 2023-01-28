@@ -18,6 +18,9 @@ searchBtn.addEventListener('click', function () {
 })
 
 
+
+//CAROUSEL
+
 const $ = selector => {
     return document.querySelector(selector);
   };
