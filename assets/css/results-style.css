@@ -1,6 +1,5 @@
 body {
   background-color: black;
-  margin-top: 15%;
 }
 
 h1 {
@@ -8,12 +7,13 @@ h1 {
   text-align: center;
   position: relative;
   font-size: 100px;
-  
+  margin: 0;
 }
 
-/* h2 {
+h2 {
   color: white;
-} */
+  flex-grow: 1; 
+}
 
 input {
     display: flex;
@@ -23,17 +23,21 @@ input {
 }
 
 button {
-    display: flex;
-    margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
   justify-content: center;
 }
- 
-.pure-menu-link {
-  margin: 20px;
-  color: blueviolet;
-  justify-content: space-between
 
+#img-position {
+  margin-left: auto;
 }
+
+.pure-menu {
+  display: block;
+  float: right;
+  
+}
+
 .pure-menu-link:hover {
   font-size: 110%;
   color: white;
@@ -55,27 +59,30 @@ input:hover {
 }
 
 button:hover {
+  cursor: pointer;
   font-size: 110%;
   color: white;
   background-color: black;
   box-shadow: 0 0 3px 3px rgb(15, 15, 15),
               3px 3px 7px 7px rgb(133, 8, 250);
-
 }
 
 #search-results {
-  display: flex;
-  margin: 10em;
+  display: inline-block;
   flex-direction: column;
+  margin: 50px;
+  width: 100px;
+  min-width: 50%;
+  max-width: 100%;
 }
 
-h2 {
-  color: white;
-  flex-grow: 1; 
+.float-left {
+  float: left;
+  margin: 20px;
+  margin-top: 33px;
 }
 
 /*CAROUSEL*/
-
 body {
   overflow-x: hidden;
 }
@@ -90,7 +97,6 @@ body {
 
 .list li {
   list-style-type: none;
-  
   width: 200px;
   height: 200px;
   opacity: .25;
@@ -137,7 +143,7 @@ body {
   width: 270px;
   height: 200px;
   position: absolute;
-  background-color: green;
+  background-color: rgb(12, 94, 247);
   border-radius: 2px;
   top: 50%;
   left: 50%;

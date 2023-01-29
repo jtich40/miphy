@@ -7,23 +7,25 @@
     <title>Miphy-Project-1</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-     <link rel="stylesheet" href="./assets/css/style.css" />
+     <link rel="stylesheet" href="./assets/css/home-page-style.css" />
 </head>
 <body>
+    <div>
     <h1><img src="./assets/img/cat 2-blackBG.jpg">.IPHY</h1>
     <input id="text-input" class="input is-normal" type="text" placeholder="Search Movie GIF'S"><br>
     <button id="search-btn">Search</button>
-
-    <ul class="list">
+</div>
+    
+    <ul class="list" id="carousel">
       <li class="hide"></li>
       <li class="prev"></li>
       <li class="act"></li>
       <li class="next"></li>
       <li class="next new-next"></li>
     </ul>
-    
+
     <div class="swipe"></div>
-    
+
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
     <script src="./assets/js/home-page.js"></script>
