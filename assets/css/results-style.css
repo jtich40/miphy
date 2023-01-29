@@ -1,13 +1,14 @@
 body {
   background-color: black;
+  margin: 3%;
 }
 
 h1 {
-  color: blue;
+  color: rgb(133, 8, 250);
   text-align: center;
   position: relative;
   font-size: 100px;
-  margin: 0;
+  margin: 3%;
 }
 
 h2 {
@@ -16,10 +17,10 @@ h2 {
 }
 
 input {
-    display: flex;
+  display: flex;
   margin: 0 auto;
   justify-content: center;
-  width: 500px;
+  min-width: 500px;
 }
 
 button {
@@ -28,18 +29,38 @@ button {
   justify-content: center;
 }
 
+/* logo images */
 #img-position {
   margin-left: auto;
 }
 
+/* page structure */
 .pure-menu {
   display: block;
-  float: right;
-  
 }
 
+.pure-menu-link {
+  padding: 0;
+}
+
+/* search adjustment */
+.float-left {
+  float: left;
+  margin: 3%;
+}
+
+/* results display */
+#search-results {
+  display: inline-block;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 100rem;
+  min-width: 70%;
+position: absolute;
+}
+
+/* button hovers */
 .pure-menu-link:hover {
-  font-size: 110%;
   color: white;
   background-color: black;
   box-shadow: 0 0 3px 3px rgb(15, 15, 15),
@@ -64,89 +85,31 @@ button:hover {
   color: white;
   background-color: black;
   box-shadow: 0 0 3px 3px rgb(15, 15, 15),
-              3px 3px 7px 7px rgb(133, 8, 250);
+              3px 3px 7px 7px blue;
 }
 
-#search-results {
-  display: inline-block;
-  flex-direction: column;
-  margin: 50px;
-  width: 100px;
-  min-width: 50%;
-  max-width: 100%;
-}
+/* Notes */
 
-.float-left {
-  float: left;
-  margin: 20px;
-  margin-top: 33px;
-}
+/* future code for gif results? */
+/* .wrapper {
+  display: flex;
+  justify-content: space-between;
+  white-space: wrap;
+} */
 
-/*CAROUSEL*/
-body {
-  overflow-x: hidden;
+/* @media screen and (position: absolute){
+  #search-results {}
 }
+width = 2179 */
 
-.list {
-  height: 200px;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%,-50%)
-}
 
-.list li {
-  list-style-type: none;
-  width: 200px;
-  height: 200px;
-  opacity: .25;
-  position: absolute;
-  left: 50%;
-  margin-left: -100px;
-  border-radius: 2px;
-  background: #9C89B8;
-  transition: transform 1s, opacity 1s;
-}
+/* To do */
 
-.list .act {
-  opacity: 1;
-}
+/* style text for results */
+/* button hover over movies */
+/* dividers for each title and gif */
+/* media queries */
+/* button for more gifs */
 
-.list .prev,
-.list .next {
-  cursor: pointer;
-}
-
-.list .prev {
-  transform: translateX(-220px) scale(.85);
-}
-
-.list .next {
-  transform: translateX(220px) scale(.85);
-}
-
-.list .hide {
-  transform: translateX(-420px) scale(.85);
-}
-
-.list .new-next {
-  transform: translateX(420px) scale(.85);
-}
-
-.list .hide,
-.list .new-next {
-  opacity: 0;
-  transition: opacity .5s, transform .5s;
-}
-
-.swipe {
-  width: 270px;
-  height: 200px;
-  position: absolute;
-  background-color: rgb(12, 94, 247);
-  border-radius: 2px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0;
-}
+/* Free time to do */
+/* check the actor and movie names to confirm correct */
