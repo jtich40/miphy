@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miphy-Project-1</title>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-     <link rel="stylesheet" href="./assets/css/home-page-style.css" />
+    <link rel="stylesheet" href="./assets/css/home-page-style.css" />
 </head>
+
 <body>
     <div>
-    <h1><img src="./assets/img/cat 2-blackBG.jpg">.IPHY</h1>
-    <div id="quotes"></div>
-    <input id="text-input" class="input is-normal" type="text" placeholder="Search Movie GIF'S"><br>
-    <button id="search-btn">Search</button>
-</div>
-    
-    <ul class="list" id="carousel">
-      <li class="hide"></li>
-      <li class="prev"></li>
-      <li class="act"></li>
-      <li class="next"></li>
-      <li class="next new-next"></li>
-    </ul>
+        <!-- MIPHY header and search bar -->
+        <h1><img src="./assets/img/cat 2-blackBG.jpg"><span style="color: #0000ff">.</span><span style="color: #2102fe">I</span><span style="color: #4304fd">P</span><span style="color: #6406fb">H</span><span style="color: #8508fa">Y</span></h1>
+        <!-- Movie quote -->
+        <ul>
+        <li><div id="quotes"></div></li>
+        </ul>
 
+        <input id="text-input" class="input is-normal" type="text" placeholder="Treat yourself to a Gif...">
+        <br>
+        <button id="search-btn">Search</button>
+    </div>
+    <!-- Carousel for trending Gifs -->
+    <ul class="list" id="carousel">
+        <li class="hide"></li>
+        <li class="prev"></li>
+        <li class="act"></li>
+        <li class="next"></li>
+        <li class="next new-next"></li>
+    </ul>
+    <!-- swipe action for carousel -->
     <div class="swipe"></div>
 
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
-
     <script src="./assets/js/movie-quotes.js"></script>
     <script src="./assets/js/home-page.js"></script>
 </body>
+
 </html>
