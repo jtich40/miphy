@@ -229,7 +229,7 @@ let movieQuotes = [
     
     {
         quote: "Eat my GIFs.",
-        character: "Bart Simpson",
+        character: "John Bender",
         movie: "The Breakfast Club"
     },
     
@@ -298,12 +298,5 @@ let movieQuotes = [
         character: "Darth Vader",
         movie: "Star Wars Episode V: The Empire Strikes Back"
     },
-    
-    {
-        quote: "",
-        character: "",
-        movie: ""
-    },
-    
     
 ]

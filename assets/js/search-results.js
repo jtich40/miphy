@@ -1,3 +1,5 @@
+let movieResultsContainer = document.getElementById('search-results')
+
 // grab user search from local storage
 let storedSearch = JSON.parse(localStorage.getItem('movie-search'))
 
