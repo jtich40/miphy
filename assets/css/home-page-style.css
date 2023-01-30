@@ -1,13 +1,17 @@
 body {
   background-color: black;
   margin-top: 10%;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
   color: blue;
-  text-align: center;
+  margin: 0;
   position: relative;
-  font-size: 100px; 
+  font-size: 100px;
 }
 
 h2 {
@@ -19,21 +23,42 @@ input {
   display: flex;
   margin: 0 auto;
   width: 500px;
+  border-radius: 5px;
+}
+
+#text-input {
+  padding: 8px;
 }
 
 button {
   display: flex;
   margin: 0 auto;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  box-shadow: 2px 2px 0 0 rgb(253, 251, 251);
 }
 
 li {
   display: flex;
+  margin: 0 auto;
   justify-content: center;
 }
 
 #quotes {
   color: white;
-  width: fit-content;
+  letter-spacing: 2px;
+  max-width: fit-content;
+  min-width: fit-content;
+  line-height: 2.5;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.movie {
+  font-weight: bolder;
 }
 
 .pure-menu-heading:hover {
@@ -49,10 +74,9 @@ input:hover {
 }
 
 button:hover {
-  font-size: 110%;
+  font-size: 99%;
   color: white;
   background-color: black;
-  box-shadow: 0 0 3px 3px rgb(15, 15, 15),
-              3px 3px 7px 7px rgb(8, 250, 81);
-
+  box-shadow: 0 0 5px 0 rgb(15, 15, 15),
+  0 0 14px 7px rgb(0, 255, 55);
 }
