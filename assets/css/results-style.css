@@ -1,46 +1,62 @@
 body {
   background-color: black;
   margin: 3%;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 h1 {
+  display: flex;
   color: rgb(133, 8, 250);
-  text-align: center;
-  position: relative;
+  align-items: baseline;
   font-size: 100px;
+
   margin: 3%;
 }
 
 h2 {
   color: white;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 input {
   display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  min-width: 500px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#text-input {
+  padding: 8px;
 }
 
 button {
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  box-shadow: 2px 2px 0 0 rgb(253, 251, 251);
+}
+
+#style-main {
+width: 100%;
 }
 
 /* logo images */
 #img-position {
   margin-left: auto;
+  border-radius: 5px;
 }
 
 /* page structure */
 .pure-menu {
-  display: block;
+  box-sizing: none;
+  width: max-content;
 }
 
 .pure-menu-link {
   padding: 0;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
 }
 
 /* search adjustment */
@@ -53,10 +69,10 @@ button {
 #search-results {
   display: inline-block;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 3.5%;
   width: 100rem;
   min-width: 70%;
-position: absolute;
+  position: absolute;
 }
 
 /* button hovers */
@@ -64,15 +80,16 @@ position: absolute;
   color: white;
   background-color: black;
   box-shadow: 0 0 3px 3px rgb(15, 15, 15),
-              3px 3px 7px 7px rgb(133, 8, 250);
+    3px 3px 7px 7px rgb(133, 8, 250);
 }
 
 .pure-menu-heading:hover {
   font-size: 110%;
+  border-radius: 5px;
   color: white;
   background-color: black;
-  box-shadow: 0 0 3px 3px rgb(15, 15, 15),
-              3px 3px 7px 7px rgb(133, 8, 250);
+  box-shadow: 0 0 5px 0 rgb(15, 15, 15),
+  0 0 14px 7px rgb(0, 255, 55);
 }
 
 input:hover {
@@ -84,11 +101,29 @@ button:hover {
   font-size: 110%;
   color: white;
   background-color: black;
-  box-shadow: 0 0 3px 3px rgb(15, 15, 15),
-              3px 3px 7px 7px blue;
+  box-shadow: 0 0 5px 0 rgb(15, 15, 15),
+    0 0 14px 5px rgb(0, 255, 55);
 }
 
-/* Notes */
+
+/* @media screen and (position: absolute){
+  #search-results {}
+} < width = 2179 */
+
+/* border between each title/gif */
+/* hr.solid {
+  border-top: 3px solid #bbb;
+  border-color: grey;
+} */
+
+
+/* color options for buttons */
+/* 0 0 15px 7px rgb(0, 255, 221); blue/green
+    0 0 15px 7px rgb(255, 0, 157); pink
+       0 0 15px 7px rgb(255, 0, 21); red
+       0 0 15px 7px rgb(0, 247, 255) l.blue
+    */
+
 
 /* future code for gif results? */
 /* .wrapper {
@@ -97,19 +132,18 @@ button:hover {
   white-space: wrap;
 } */
 
-/* @media screen and (position: absolute){
-  #search-results {}
-}
-width = 2179 */
+
 
 
 /* To do */
 
-/* style text for results */
+/* Make everything responsive */
 /* button hover over movies */
 /* dividers for each title and gif */
 /* media queries */
 /* button for more gifs */
+/* make gif line flex with wrapper (may need class added for them in js) */
 
-/* Free time to do */
+/* Free time - to do */
 /* check the actor and movie names to confirm correct */
+/* clean all code up, everything necessary and commented? */
