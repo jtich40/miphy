@@ -9,23 +9,35 @@ h1 {
   color: rgb(133, 8, 250);
   align-items: baseline;
   font-size: 100px;
-
-  margin: 3%;
+  justify-content: center;
+  margin: 0;
 }
 
 h2 {
   color: white;
-  flex-grow: 1;
+  background-color:  rgb(133, 8, 250);
+  text-align: center;
+  height: 2vw;
+  margin: 0;
+  padding-top: 10px;
 }
 
 input {
   display: flex;
   border-radius: 5px;
-  width: 100%;
+  width: 30vw;
+  margin:auto;
+  justify-content: center;
 }
 
 #text-input {
   padding: 8px;
+}
+
+.wrapper {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 button {
@@ -39,6 +51,25 @@ button {
 
 #style-main {
 width: 100%;
+}
+
+#quotes {
+    color: white;
+    letter-spacing: 2px;
+    max-width: fit-content;
+    min-width: fit-content;
+    line-height: 2.5;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+.quote {
+  font-style: italic;
+}
+
+.movie {
+  font-weight: bolder;
 }
 
 /* logo images */
@@ -55,24 +86,16 @@ width: 100%;
 
 .pure-menu-link {
   padding: 0;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-}
-
-/* search adjustment */
-.float-left {
-  float: left;
-  margin: 3%;
 }
 
 /* results display */
 #search-results {
-  display: inline-block;
+  background-color: black;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-  margin-top: 3.5%;
-  width: 100rem;
-  min-width: 70%;
-  position: absolute;
+  margin-top: 1.5%;
+  width: 100%;
 }
 
 /* button hovers */
@@ -109,41 +132,3 @@ button:hover {
 /* @media screen and (position: absolute){
   #search-results {}
 } < width = 2179 */
-
-/* border between each title/gif */
-/* hr.solid {
-  border-top: 3px solid #bbb;
-  border-color: grey;
-} */
-
-
-/* color options for buttons */
-/* 0 0 15px 7px rgb(0, 255, 221); blue/green
-    0 0 15px 7px rgb(255, 0, 157); pink
-       0 0 15px 7px rgb(255, 0, 21); red
-       0 0 15px 7px rgb(0, 247, 255) l.blue
-    */
-
-
-/* future code for gif results? */
-/* .wrapper {
-  display: flex;
-  justify-content: space-between;
-  white-space: wrap;
-} */
-
-
-
-
-/* To do */
-
-/* Make everything responsive */
-/* button hover over movies */
-/* dividers for each title and gif */
-/* media queries */
-/* button for more gifs */
-/* make gif line flex with wrapper (may need class added for them in js) */
-
-/* Free time - to do */
-/* check the actor and movie names to confirm correct */
-/* clean all code up, everything necessary and commented? */

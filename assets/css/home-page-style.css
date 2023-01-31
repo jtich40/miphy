@@ -16,7 +16,6 @@ h1 {
 
 h2 {
   color: white;
-  flex-grow: 1; 
 }
 
 input {
@@ -39,18 +38,15 @@ button {
   box-shadow: 2px 2px 0 0 rgb(253, 251, 251);
 }
 
-li {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-}
-
 #quotes {
   color: white;
   letter-spacing: 2px;
   max-width: fit-content;
   min-width: fit-content;
   line-height: 2.5;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .quote {
