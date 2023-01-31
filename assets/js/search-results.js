@@ -52,12 +52,16 @@ function findGif(title) {
             movieResultsContainer.appendChild(titleEl)
         for (let i = 0; i < data.data.length; i++) {
             const gifResults = data.data[i];
-            
+            // add wrapper that contains GIFs for styling
+            let wrapper = document.createElement('div')
+            wrapper.setAttribute('class', 'wrapper')
+            // // add gif element to page
             let gifEl = document.createElement('img')
-            // add gif link to the gif element
+            gifEl.setAttribute('class', 'gif')
             gifEl.src = gifResults.images.original.url
+            wrapper.appendChild(gifEl)
             // add gif to container
-            movieResultsContainer.appendChild(gifEl)
+            movieResultsContainer.appendChild(wrapper)
         }
     })
 }
