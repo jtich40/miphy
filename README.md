@@ -14,27 +14,56 @@ THEN I see a collection of GIFs related to the movie
 WHEN I select a GIF
 THEN I am given options for sharing
 
-## DESCRIPTION -
+## DESCRIPTION
 Have you ever wanted to use a specific GIPHY from that one specific movie?
 You can search for your favorite movie via OMDB's API and select a GIPHY via GIPHY's API. It's an easier way to look up your favorite movie for that perfect GIPHY! This fun and quirky web page is a one-stop shop for a GIPHY fanatic! 
 
-## VISUALS -
+## VISUALS
 
-Creation Details:
-A sleek looking color scheme was decided upon with a fun logo with a cat mascot representing the 'M' in M.IPHY on our homepage and a simple user-friendly search bar. 
+### Creation Details:
+Feel & Design -
+A clean and playful looking color scheme was decided upon with a fun logo of a cat mascot, representing the 'M' in M.IPHY. Below the logo is a user-friendly search bar and button.
 
-![image](https://user-images.githubusercontent.com/118077000/214955983-e604cc2f-5919-40e6-901e-24e99f7c0950.png)
+![image](https://user-images.githubusercontent.com/118077000/215887771-4af72f83-3ae0-4b5d-9a88-cf99aeadc1a7.png)
 
-Navigation options for filtering results to get the perfect movie GIPHY.
+Once the user has searched for their desired movie, you are lead to the results page. This page continues with the same feel and design as the homepage. Users can pick their gif and/or search for another movie without having to return to the homepage. However, if a user would like to return to the homepage, there is a home button icon in the top left corner(see Future Development section for more info on the home icon button).
 
-![image](https://user-images.githubusercontent.com/118077000/214956551-05adfebb-007e-4088-ac62-9470105bda94.png)
+![image](https://user-images.githubusercontent.com/118077000/215897356-2b64f922-bfad-4a65-99db-6675139dba78.png)
 
-Coding:
+We also have an array of movie quotes that changes on refresh. Some version of the word GIPHY/Gif is inserted to give the web site some character through humor.
 
-Completed web page:
+![image](https://user-images.githubusercontent.com/118077000/215897626-38448155-e7f3-4a4f-b91c-b482acf52d98.png)
 
+![image](https://user-images.githubusercontent.com/118077000/215897668-c63340e1-ed27-4f4f-ac93-18b3dba0d3b5.png)
 
-## USAGE -
-Upon visiting the webpage you are welcomed with a simple search and navigation bar. The user can simply type in a movie title or use the nav bar that allows them to filter the search by genre, year, and all trending Gifs. Once a user searches for a movie, results are then pulled from IMDB using OMDb's API server. The user can then see movie details including storyline, reviews, cast, fun facts, and details. This assists users that want a specific GIPHY related to a movie whether that be needing a list of all movie series, descriptions, and/or cast or they can simply click our "see all related" button which will display all tagged Gifs related to their search criteria. A perfectly curated GIPHY will then be ready to share. 
+Gifs are then displayed onto the page, ready for the user to right click, save image, and share.
+
+![image](https://user-images.githubusercontent.com/118077000/215897971-a8993e74-c613-4d63-8411-404641bf03ee.png)
+
+Functionality -
+
+Javascript:
+the following code pulls from OMDb API to display movie titles onto the web page:
+
+![image](https://user-images.githubusercontent.com/118077000/215898951-e99f02df-6767-494b-b2b3-b0714c4dc0ce.png)
+
+Next, the code pulls from GIPHY's API to insert the first 3 GIFs per movie title:
+
+![image](https://user-images.githubusercontent.com/118077000/215899253-54173e24-dab8-4b9d-ad23-17f5bb29f4cf.png)
+
+Buttons, classes and tag elements were created using Javascript alongside HTML:
+
+![image](https://user-images.githubusercontent.com/118077000/215899582-a30924d2-746a-4e04-82b4-5bf9d59c9934.png)
+
+## USAGE
+Upon visiting the webpage you are welcomed with a simple search and navigation bar. The user can simply type in a movie title. Once a user searches for a movie, results are then pulled from OMDb's API server. This assists users that want a specific GIPHY related to a movie. A perfectly curated GIPHY will then be ready to share. 
+
+## Future Development
+Homepage
+- Add trending Gifs for user to view. Which also assists in making use of home icon on results page.
+
+Results page
+- Add button for user to choose to see all related results provided on GIPHY's web site.
+
 
 Website URL: 
