@@ -128,6 +128,14 @@ button:hover {
     0 0 14px 5px rgb(0, 255, 55);
 }
 
+footer {
+  height:29rem;
+  align-items:flex-end;
+  color:grey;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+}
 
 /* @media screen and (position: absolute){
   #search-results {}
