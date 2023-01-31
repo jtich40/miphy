@@ -62,9 +62,35 @@ function findGif(title) {
     })
 }
 
+function generateQuote () {
+  // container for randomly generated movie quote
+  let quoteContainer = document.getElementById('quotes')
+  // pick random quote/character/movie data
+  let randomQuote = movieQuotes[Math.floor(Math.random() * movieQuotes.length)]
+ 
+  // generate quote for container
+  let quoteEl = document.createElement('span')
+  quoteEl.setAttribute('class', 'quote')
+  quoteEl.innerHTML = `"${randomQuote.quote}"`
+  quoteContainer.appendChild(quoteEl)
+
+  // generate character for container
+  let characterEl = document.createElement('span')
+  characterEl.setAttribute('class', 'character')
+  characterEl.innerHTML = ` - ${randomQuote.character}, `
+  quoteContainer.appendChild(characterEl)
+
+  // generate movie for container
+  let movieEl = document.createElement('span')
+  movieEl.setAttribute('class', 'movie')
+  movieEl.innerHTML = `${randomQuote.movie}`
+  quoteContainer.appendChild(movieEl)
+}
+
 // findMovie function is invoked on search results page load
 window.addEventListener('load', function() {
     findMovie(storedSearch)
+    generateQuote()
 })
 
 searchBtn.addEventListener('click', function () {
