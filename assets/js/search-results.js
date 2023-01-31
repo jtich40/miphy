@@ -33,7 +33,7 @@ function findMovie(searchVal) {
 }
 function findGif(title) {
     let apiKey2 = 'Nq178l1PC1zOvSDhLsOWhDI0FwqXPI99'
-    let giphyUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey2}&q=${title}&limit=5&offset=0&rating=g&lang=en`
+    let giphyUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey2}&q=${title}&limit=3&offset=0&rating=g&lang=en`
 
     fetch(giphyUrl)
     .then(function (res) {
