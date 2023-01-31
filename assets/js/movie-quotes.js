@@ -298,5 +298,17 @@ let movieQuotes = [
         character: "Darth Vader",
         movie: "Star Wars Episode V: The Empire Strikes Back"
     },
+
+    {
+        quote: "So much room for GIFs!",
+        character: "Brennan Huff",
+        movie: "Step Brothers"
+    },
+
+    {
+        quote: "I've been called the GIF of my generation.",
+        character: "Brennan Huff",
+        movie: "Step Brothers"
+    },
     
 ]
