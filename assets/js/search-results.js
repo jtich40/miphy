@@ -50,11 +50,12 @@ function findGif(title) {
             titleEl.innerText = title
             // add movie titles to container
             movieResultsContainer.appendChild(titleEl)
-        for (let i = 0; i < data.data.length; i++) {
-            const gifResults = data.data[i];
             // add wrapper that contains GIFs for styling
             let wrapper = document.createElement('div')
             wrapper.setAttribute('class', 'wrapper')
+        for (let i = 0; i < data.data.length; i++) {
+            const gifResults = data.data[i];
+  
             // // add gif element to page
             let gifEl = document.createElement('img')
             gifEl.setAttribute('class', 'gif')
