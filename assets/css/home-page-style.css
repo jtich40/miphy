@@ -1,28 +1,26 @@
 body {
   background-color: black;
-  margin-top: 10%;
+  margin: auto;
+  margin-top: 6%;
   font-family: 'IBM Plex Mono', monospace;
 }
 
 h1 {
   display: flex;
-  justify-content: center;
+  color: rgb(133, 8, 250);
   align-items: baseline;
-  color: blue;
-  margin: 0;
-  position: relative;
-  font-size: 100px;
+  font-size: 100pt;
+  justify-content: center;
+  margin: auto;
 }
 
-h2 {
-  color: white;
-}
-
+/* search bar and button */
 input {
   display: flex;
-  margin: 0 auto;
-  width: 500px;
   border-radius: 5px;
+  width: 30vw;
+  margin: 15pt auto;
+  justify-content: center;
 }
 
 #text-input {
@@ -31,13 +29,14 @@ input {
 
 button {
   display: flex;
-  margin: 0 auto;
+  margin: 15pt auto;
   border-radius: 5px;
-  background-color: black;
   color: white;
+  background-color: black;
   box-shadow: 2px 2px 0 0 rgb(253, 251, 251);
 }
 
+/* Displayed quotes */
 #quotes {
   color: white;
   letter-spacing: 2px;
@@ -50,38 +49,33 @@ button {
 }
 
 .quote {
-  font-style: italic;
+font-style: italic;
 }
 
 .movie {
-  font-weight: bolder;
+font-weight: bolder;
 }
 
-.pure-menu-heading:hover {
-  font-size: 110%;
-  color: white;
-  background-color: black;
-  box-shadow: 0 0 3px 3px rgb(15, 15, 15),
-              3px 3px 7px 7px rgb(133, 8, 250);
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  height: 25vw;
+  color:rgb(156, 156, 156);
 }
 
+/* button hovers */
 input:hover {
   box-shadow: 0 0 5px 5px rgb(255, 254, 254);
 }
 
 button:hover {
+  cursor: pointer;
   font-size: 99%;
   color: white;
   background-color: black;
-  box-shadow: 0 0 5px 0 rgb(15, 15, 15),
-  0 0 14px 7px rgb(0, 255, 55);
-}
-
-footer {
-  height:29rem;
-  align-items:flex-end;
-  color:grey;
-  text-align:center;
-  display:flex;
-  justify-content:center;
+  box-shadow:
+  0 0 7px 3px #8d8dfc,
+  0 0 7px 3px #0000ff;
 }
