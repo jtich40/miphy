@@ -1,5 +1,7 @@
 // global DOM variable
 let movieResultsContainer = document.getElementById('search-results')
+let searchBtn = document.getElementById('search-btn')
+let searchParams = document.getElementById('text-input')
 
 // grab user search from local storage to pass through as argument for findMovie function
 let storedSearch = JSON.parse(localStorage.getItem('movie-search'))
@@ -63,4 +65,17 @@ function findGif(title) {
 // findMovie function is invoked on search results page load
 window.addEventListener('load', function() {
     findMovie(storedSearch)
+})
+
+searchBtn.addEventListener('click', function () {
+    // text input entered by user
+    let searchVal = searchParams.value
+    if(searchVal === "") {
+        return
+    }
+    // saves search value to local storage
+    localStorage.setItem('movie-search', JSON.stringify(searchVal))
+   
+    // redirects user to search results page
+    window.location.href = './search-results.html'
 })
