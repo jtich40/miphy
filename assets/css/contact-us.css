@@ -1,0 +1,45 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    
+  }
+  
+  li {
+    color: white;
+    font-size: 120%;
+    margin-left: 50px;
+  }
+
+.label {
+    color: white;
+}
+
+.checkbox {
+    color: white;
+}
+
+.radio {
+    color: white;
+}
+
+li:hover {
+    cursor: pointer;
+    font-size: 99%;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow:
+    0 0 7px 3px #8d8dfc,
+    0 0 7px 3px #0000ff;
+  }
+
+  #feedback {
+    color: white;
+    text-align: center;
+  }
