@@ -4,10 +4,6 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-header {
-  margin-left: 10%;
-  margin-top: 4%;
-}
 
 h1 {
   display: flex;
@@ -143,4 +139,29 @@ button:hover {
   box-shadow:
   0 0 7px 3px #8d8dfc,
   0 0 7px 3px #0000ff;
+}
+
+li:hover {
+  cursor: pointer;
+  font-size: 99%;
+  color: black;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow:
+  0 0 7px 3px #8d8dfc,
+  0 0 7px 3px #0000ff;
+}
+
+nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-top: 4%;
+  
+}
+
+li {
+  color: white;
+  font-size: 120%;
+  margin-left: 50px;
 }
