@@ -26,6 +26,14 @@ A clean and playful looking color scheme was decided upon with a fun logo of a c
 
 ![image](https://user-images.githubusercontent.com/118077000/215887771-4af72f83-3ae0-4b5d-9a88-cf99aeadc1a7.png)
 
+A navbar at the top allows user to contact us
+
+![image](https://user-images.githubusercontent.com/118077000/215941737-355ff858-ef17-4528-88bb-c2b6e01c4066.png)
+
+On the contact us tab, the user is able to input their info with a comment and submit. We have created a dummy mailinator account for the feedback submissions.
+
+![image](https://user-images.githubusercontent.com/118077000/215941897-8d9ce41b-6d1f-4708-9cce-ef02c7700013.png)
+
 Once the user has searched for their desired movie, you are lead to the results page. This page continues with the same feel and design as the homepage. Users can pick their gif and/or search for another movie without having to return to the homepage. However, if a user would like to return to the homepage, there is a home button icon in the top left corner(see Future Development section for more info on the home icon button).
 
 ![image](https://user-images.githubusercontent.com/118077000/215897356-2b64f922-bfad-4a65-99db-6675139dba78.png)
@@ -61,9 +69,6 @@ Upon visiting the webpage you are welcomed with a simple search and navigation b
 ## Future Development
 Homepage
 - Add trending Gifs for user to view. Which also assists in making use of home icon on results page.
-
-Navbar
-- future comment form for page feedback 
 
 Results page
 - Add button for user to choose to see all related results provided on GIPHY's web site.
