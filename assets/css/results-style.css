@@ -4,10 +4,6 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-/* header {
-  margin-left: 10%;
-  margin-top: 4%;
-} */
 
 h1 {
   display: flex;
