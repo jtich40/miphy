@@ -9,7 +9,7 @@ let storedSearch = JSON.parse(localStorage.getItem('movie-search'))
 
 function findMovie(searchVal) {
     let apiKey = '1851b49e'
-    let movieUrl = `http://www.omdbapi.com/?&apikey=${apiKey}&s=${searchVal}&y=${searchVal}`
+    let movieUrl = `https://www.omdbapi.com/?&apikey=${apiKey}&s=${searchVal}&y=${searchVal}`
     
 
     fetch(movieUrl)
