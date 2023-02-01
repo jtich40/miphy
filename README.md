@@ -62,8 +62,10 @@ Upon visiting the webpage you are welcomed with a simple search and navigation b
 Homepage
 - Add trending Gifs for user to view. Which also assists in making use of home icon on results page.
 
+Navbar
+- future comment form for page feedback 
+
 Results page
 - Add button for user to choose to see all related results provided on GIPHY's web site.
 
-
-Website URL: 
+Website URL: https://jtich40.github.io/miphy-movie-gif-generator/
