@@ -1,5 +1,6 @@
 // global DOM variable
 let movieResultsContainer = document.getElementById('search-results')
+let input = document.getElementById('text-input')
 let searchBtn = document.getElementById('search-btn')
 let searchParams = document.getElementById('text-input')
 
@@ -92,13 +93,7 @@ function generateQuote () {
   quoteContainer.appendChild(movieEl)
 }
 
-// findMovie function is invoked on search results page load
-window.addEventListener('load', function() {
-    findMovie(storedSearch)
-    generateQuote()
-})
-
-searchBtn.addEventListener('click', function () {
+function runSearch() {
     // text input entered by user
     let searchVal = searchParams.value
     if(searchVal === "") {
@@ -109,4 +104,19 @@ searchBtn.addEventListener('click', function () {
    
     // redirects user to search results page
     window.location.href = './search-results.html'
+  }
+
+// findMovie function is invoked on search results page load
+window.addEventListener('load', function() {
+    findMovie(storedSearch)
+    generateQuote()
+})
+
+// event listener to submit search query on click or enter
+searchBtn.addEventListener('click', runSearch)
+
+input.addEventListener('keydown', function(event) {
+  if(event.key === "Enter") {
+    runSearch()
+  }
 })
