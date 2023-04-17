@@ -34,6 +34,8 @@ input {
   width: 30vw;
   margin: 15pt auto;
   justify-content: center;
+  width: 80vw;
+  max-width: 400px;
 }
 
 #text-input {
@@ -90,7 +92,7 @@ font-weight: bolder;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 1.5%;
+  margin-top: 5vh;
   width: 100%;
 }
 
@@ -164,4 +166,12 @@ li {
   color: white;
   font-size: 120%;
   margin-left: 50px;
+}
+
+/* media query */
+@media (max-width: 992px) {
+  #quotes {
+    flex-direction: column;
+    text-align: center;
+  }
 }

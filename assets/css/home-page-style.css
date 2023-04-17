@@ -31,7 +31,8 @@ h1 {
 input {
   display: flex;
   border-radius: 5px;
-  width: 30vw;
+  width: 80vw;
+  max-width: 400px;
   margin: 15pt auto;
   justify-content: center;
 }
@@ -102,4 +103,12 @@ li:hover {
   box-shadow:
   0 0 7px 3px #8d8dfc,
   0 0 7px 3px #0000ff;
+}
+
+/* media query */
+@media (max-width: 992px) {
+  #quotes {
+    flex-direction: column;
+    text-align: center;
+  }
 }
