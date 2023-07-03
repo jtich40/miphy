@@ -73,4 +73,4 @@ Homepage
 Results page
 - Add button for user to choose to see all related results provided on GIPHY's web site.
 
-Website URL: https://jtich40.github.io/miphy-movie-gif-generator/
+Website URL: https://jtich40.github.io/miphy/
